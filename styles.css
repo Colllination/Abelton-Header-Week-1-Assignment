@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.primary-navs {
+    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+    display: flex;
+    list-style-type: none;
+    gap: 38px;
+    float: left;
+    margin-right: 40px;
+    
+}
+
+.secondary-navs {
+    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    float: right;
+    margin-right: 40px;
+    
+}
+
+.logo {
+    width: 60px;
+    height: 55px;
+    margin-right: 20px;
+    float: left;
+    margin-left: 20px;
+}
