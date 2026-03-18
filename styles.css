@@ -8,8 +8,19 @@
     
 }
 
+* {
+  box-sizing: border-box;
+}
 
+img {
+    max-width: 100%;
+    display: block;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .nav-container {
     display: flex;
@@ -89,6 +100,45 @@
   font-size: 16px;
 }
 
+.abelton-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+}
+
+.abelton-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.abelton-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgba(255, 68, 68, 0.913);
+  font-size: 110px;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+}
+
+
+.first-text {
+    position: relative;
+    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+    margin-top: 100px;
+    display: block;
+}
+
+
 
 
 .purple-box {
@@ -115,26 +165,5 @@
 }
 
 
-.statistics-container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 90px;
-    max-width: 700px;
-    margin: auto ;
-    border: 1px solid var(--purple-color);
-    padding: 30px;  
-}
 
-.downloads {
-    flex: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;  
-}
 
-.user-rating {
-    flex: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-
-}
