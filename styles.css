@@ -429,7 +429,7 @@ body {
   margin: auto;
   margin-top: 150px;
 }
- 
+
 
 .first-image {
   width: 400px;
@@ -577,10 +577,10 @@ button {
 }
 
 .newsletter button {
- padding: 13px 25px;
- background: #0f27ff;
- color: white;
- border: none;
+  padding: 13px 25px;
+  background: #0f27ff;
+  color: white;
+  border: none;
 
 }
 
@@ -616,7 +616,7 @@ button {
 }
 
 
-select  {
+select {
   font-size: 17px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
   font-weight: bold;
