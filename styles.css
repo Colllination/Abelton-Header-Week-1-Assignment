@@ -13,10 +13,8 @@
 }
 
 section {
-  padding: 100px 40px;
+  padding: 80px 0;
 }
-
-
 
 img {
   max-width: 100%;
@@ -176,10 +174,7 @@ body {
   color: #3e3b3b;
 }
 
-.first-text-section {
-  margin: 0, auto;
-  max-width: 800px;
-}
+
 
 
 .yellow-box-section {
@@ -223,18 +218,6 @@ body {
   width: 100%;
   display: block;
 }
-
-
-.first-img {
-  align-self: start;
-}
-
-.second-img {
-  align-self: end;
-}
-
-
-
 
 .second-text-section {
   max-width: 700px;
@@ -540,29 +523,6 @@ body {
   margin-left: 60px;
 }
 
-@media (max-width: 768px) {
-  .jobs-container {
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-  }
-
-  .blue-text-box {
-    max-width: 100%;
-    padding: 20px;
-  }
-
-  .blue-text-box p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    max-width: none;
-  }
-
-  .blue-text-box a {
-    margin-left: 0;
-    align-self: center;
-  }
-}
 
 .footer {
   background: var(--background-color);
@@ -716,33 +676,41 @@ p {
 
 
 
-
-
 @media (max-width: 768px) {
   section {
-    padding: 60px 20px;
+    padding: 50px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .yellow-box-section, .green-box-section, .purple-box, .jobs-section, .footer {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
   }
 
   .green-img-grid {
     grid-template-columns: 1fr;
+    >div {
+      width: 100%;
+    }
   }
 
   .green-img-grid img {
     position: static;
+    margin: 20px auto;    
+    height: auto;
   }
 
-  .first-text-section {
-    padding: 0 20px;
-  }
-
-  .sub-text {
-    font-size: 16px;
-    padding: 0 20px;
+ .first-text-section, .second-text-section, .third-text-section, .fourth-text-section,
+  .fifth-text-section, .sixth-text-section {
+    padding: 0 15px;
   }
 
   .video-wrapper {
@@ -751,16 +719,37 @@ p {
   }
 
   .video-description {
+    font-size: 11px;
+  }
+
+  .jobs-container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .blue-text-box {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .blue-text-box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: none;
+  }
+
+  .blue-text-box a {
+    margin-left: 0;
+    align-self: center;
+  }
+  
+  .video-description {
     font-size: 16px;
   }
 
   .yellow-box {
     grid-template-columns: 1fr;
-  }
-
-  .abelton-image h1 {
-    font-size: 32px;
-    padding: 0 20px;
   }
 
 
