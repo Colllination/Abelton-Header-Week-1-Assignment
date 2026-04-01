@@ -16,6 +16,15 @@ section {
   padding: 80px 0;
 }
 
+section, div {
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
 img {
   max-width: 100%;
   display: block;
@@ -923,6 +932,7 @@ section, div {
   position: static;
   width: 100%;
   height: 200px;
+  max-width: 600px;
   }
 
   .img-big {
@@ -1000,25 +1010,205 @@ section, div {
 }
 
 
+@media (max-width: 375px) {
 
-@media (max-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: 2fr 1fr;
-  }
 
-  .yellow-box {
-    grid-template-columns: 1fr;
+  body {
+    overflow-x: hidden;
   }
 
   section {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px 20px;
+  }
+
+  .primary-navs,
+  .secondary-navs {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .sub-nav {
+    padding: 10px 20px;
+    gap: 15px;
+    font-size: 13px;
+  }
+
+
+  .abelton-image h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+
+  .main-text,
+  .main-text-2,
+  .main-text-3,
+  .main-text-4,
+  .main-text-5,
+  .main-text-6,
+  .sub-text,
+  .sub-text-2,
+  .sub-text-3,
+  .sub-text-4,
+  .sub-text-5,
+  .sub-text-6 {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  .yellow-box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .background {
+    position: static;
+    height: 120px;
+  }
+
+
+  .video-container {
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-description {
+    font-size: 13px;
+  }
+
+
+  .green-img-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .green-box {
+    position: static;
+    height: 120px;
+  }
+
+  .img-big {
+    transform: none;
+    margin-top: 0;
+  }
+
 
   .purple-box {
     flex-direction: column;
-    gap: 30px;
-    padding: 60px 20px;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+  .jobs-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .blue-text-box {
+    padding: 20px;
+  }
+
+  .blue-text-box p {
+    font-size: 18px;
   }
 
 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 1280px) {
+
+
+  section {
+    padding: 80px 40px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+
+  .nav-container {
+    padding: 15px 40px;
+  }
+
+
+  .sub-nav {
+    padding: 10px 40px;
+  }
+
+
+  .first-text-section,
+  .second-text-section,
+  .third-text-section,
+  .fourth-text-section,
+  .fifth-text-section,
+  .sixth-text-section {
+    max-width: 800px;
+    margin: 80px auto;
+  }
+
+
+  .yellow-box,
+  .green-img-grid,
+  .jobs-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .purple-box {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding: 80px 40px;
+  }
+
+  .footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 }
